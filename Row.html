@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #DFD6BD;
+        display: flex;
+    }
+    .left-side {
+        flex: 1;
+        padding: 20px;
+    }
+    .left-side img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .right-side {
+        flex: 1;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .item {
+        width: calc(33.33% - 20px);
+        margin-bottom: 20px;
+    }
+    .item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    .item-details {
+        text-align: center;
+    }
+    .checkbox {
+        display: inline-block;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+    <div class="left-side">
+        <img src="pppppp.png" alt="Extra Large Image">
+    </div>
+    <div class="right-side">
+        <div class="item">
+            <img src="i1.jpg" alt="Item 1">
+            <div class="item-details">
+                <p>Name: Veg Rolls</p>
+                <p>Price: Rs.100</p>
+                <label class="checkbox">
+                    <input type="checkbox"> Buy
+                </label>
+            </div>
+        </div>
+        <div class="item">
+            <img src="i2.jpg" alt="Item 2">
+            <div class="item-details">
+                <p>Name: Chapathi and Rice</p>
+                <p>Price: Rs.150 </p>
+                <label class="checkbox">
+                    <input type="checkbox"> Buy
+                </label>
+            </div>
+        </div>
+        <div class="item">
+            <img src="i3.jpg" alt="Item 3">
+            <div class="item-details">
+                <p>Name: Idly and Vada</p>
+                <p>Price: Rs.60</p>
+                <label class="checkbox">
+                    <input type="checkbox"> Buy
+                </label>
+            </div>
+        </div>
+        <div class="item">
+            <img src="i4.jpg" alt="Item 4">
+            <div class="item-details">
+                <p>Name: Rice and Dal</p>
+                <p>Price: Rs.125</p>
+                <label class="checkbox">
+                    <input type="checkbox"> Buy
+                </label>
+            </div>
+        </div>
+        <div class="item">
+            <img src="i5.jpg" alt="Item 5">
+            <div class="item-details">
+                <p>Name: Mixture</p>
+                <p>Price: Rs.30</p>
+                <label class="checkbox">
+                    <input type="checkbox"> Buy
+                </label>
+            </div>
+        </div>
+        <div class="item">
+            <img src="i6.jpg" alt="Item 6">
+            <div class="item-details">
+                <p>Name: Prawns Biryani</p>
+                <p>Price: Rs.250</p>
+                <label class="checkbox">
+                    <input type="checkbox"> Buy
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Connect - Donate Food</title>
+    <style>
+        .container form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+body {
+            background-color: #DFD6BD;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-image: url('donate.png');
+            padding: 0;
+        }
+
+.container form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.container form select,
+.container form input[type="number"],
+.container form input[type="date"],
+.container form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.container form input[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container form input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const donateFoodForm = document.getElementById("donateFoodForm");
+
+    donateFoodForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+        // Add your logic to handle the donation form submission here
+        const foodType = document.getElementById("foodType").value;
+        const quantity = document.getElementById("quantity").value;
+        const expiryDate = document.getElementById("expiryDate").value;
+
+        // Example: Log the donation details
+        console.log(Donated ${quantity} ${foodType} with expiry date ${expiryDate});
+    });
+});
+</script>
+
+    
+</head>
+<body>
+
+    <div class="container">
+        <div style="text-align: center;">
+            <h2>Donate Food</h2>
+        </div>
+        
+        <form id="donateFoodForm">
+            <label for="foodType">Select Food Type:</label>
+            <select id="foodType" name="foodType" required>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="non-vegetarian">Non-Vegetarian</option>
+                <!-- Add more food types as needed -->
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="date" id="expiryDate" name="expiryDate" required>
+
+            <button type="submit">Donate Now</button>
+        </form>
+    </div>
+</body>
+</html>

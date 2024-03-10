@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #DFD6BD;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .nav {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .nav a {
+            margin-right: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #666;
+        }
+
+        form {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        ul li:hover {
+            background-color: #eaeaea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-size: 48px; color: #D70F64; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">KFC</h1>
+        <h2>Create Category</h2>
+        <form id="createCategoryForm">
+            <label for="categoryName">Category Name:</label>
+            <input type="text" id="categoryName" name="categoryName">
+            <button type="submit">Create Category</button>
+        </form>
+        <script>
+            // Function to redirect to another webpage
+            function redirectToPage() {
+                window.location.href = "C:\\Users\\HP\\Downloads\\Hack\\as1.html";
+            }
+        </script>
+        <!-- Add onclick event to the button to call the redirectToPage function -->
+        
+        <h2>Add an Item</h2>
+        <form id="addItemForm">
+            <select id="categorySelect"></select>
+            <label for="itemName">Item Name:</label>
+            <input type="text" id="itemName" name="itemName">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity">
+            <label for="expiration">Expiration details:</label>
+            <input type="text" id="expiration" name="expiration">
+            <label for="photo">Upload a photo:</label>
+            <input type="file" id="photo" name="photo">
+            <button type="submit">Add item</button>
+            <button onclick="redirectToPage()">Donate</button>
+        </form>
+    </div>
+</body>
+</html>
